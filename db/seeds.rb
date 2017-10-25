@@ -12,8 +12,8 @@ user.save
 
 User.first.update(role: :admin)
 
-NUMBER_OF_USERS = 4000
-NUMBER_OF_ENTITIES = 1500
+NUMBER_OF_USERS = 40
+NUMBER_OF_ENTITIES = 15
 
 NUMBER_OF_USERS.times do |i|
   user = User.new
@@ -91,4 +91,4 @@ NUMBER_OF_ENTITIES.times do |i|
   celestial_body.constellation = Faker::Space.constellation
   celestial_body.map_chart_number = Faker::Number.number(4)
   celestial_body.save
-end 
+end

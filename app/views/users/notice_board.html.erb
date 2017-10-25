@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h1 class="panel-title"> Benvenuto <%= current_user.name %></h1>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-sm-12">
+        <h5> La tua tessera scade il <%= current_user.subscription_expiration %></h5>
+        <h2 class="h4">Lista delle tue osservazioni</h2>
+        <p>
+          <strong>Azioni disponibili:</strong>
+          <span>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#new-user-modal">Crea nuova osservazione</button>
+          </span>
+        </p>
+      </div>
+    </div>
+  </div>

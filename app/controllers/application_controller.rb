@@ -36,6 +36,9 @@ class ApplicationController < ActionController::Base
   # Metodo che visualizza la pagina iniziale degli utenti ordinari.
   def user_index
     # visualizza la pagina iniziale degli utenti ordinari.
+  
+    # visualizza la bacheca dell'utente ordinario.
+    render 'users/notice_board'
   end
 
   # Metodo per impostare il layout della pagina, sulla base
